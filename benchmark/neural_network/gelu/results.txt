@@ -1,0 +1,50 @@
+Activation: gelu
+
+Optimal epochs: 24
+
+Hidden nodes: 32
+
+Validation:
+	Training set resampled: false
+	Threshold = 0.5
+	Metrics:
+		Accuracy=0.964, Recall=0.922, Precision=0.933, F1=0.927, Explained Variance=0.808
+		
+
+	Intervals:
+		Confidence = 0.95
+		Accuracy 0.95 confidence interval: (0.957005363851916, 0.9707724139258618)
+		Recall 0.95 confidence interval: (0.8959332116172306, 0.9480867634139806)
+		Precision 0.95 confidence interval: (0.9230143881978483, 0.9420011254999099)
+		F1 0.95 confidence interval: (0.9120286907063335, 0.9417644812212516)
+		Explained Variance 0.95 confidence interval: (0.7709976917368424, 0.8441551636951661)
+		
+Test:
+	Training set resampled: true
+	Threshold = 0.5
+	Metrics:
+		Accuracy=0.973, Recall=0.961, Precision=0.933, F1=0.947, Explained Variance=0.856
+		
+
+	Intervals:
+		Confidence = 0.95
+		Accuracy 95.0% confidence interval: (0.9564738483771105, 0.9885261516228896)
+		Recall 95.0% confidence interval: (0.9447581621026007, 0.9768104653483798)
+		Precision 95.0% confidence interval: (0.9173071817104438, 0.9493594849562229)
+		F1 95.0% confidence interval: (0.930833751758753, 0.9628860550045322)
+		Explained variance 95.0% confidence interval: (0.8395140510353549, 0.871566354281134)
+		
+
+	Critical thresholds:
+
+		Index	Threshold	Precision	Recall
+		-------------------------------------------------
+		0	0.012523	0.800		0.980392
+		1	0.034424	0.825		0.970588
+		2	0.070861	0.850		0.960784
+		3	0.098997	0.875		0.960784
+		4	0.280942	0.900		0.960784
+		5	0.518589	0.925		0.960784
+		6	0.605962	0.950		0.960784
+		7	0.997023	0.975		0.852941
+		-------------------------------------------------

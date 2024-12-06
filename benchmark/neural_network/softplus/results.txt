@@ -1,0 +1,27 @@
+Activation: softplus
+
+Epochs: 20
+
+Dataset resampled: false
+
+Metrics:
+	Accuracy=0.968, Recall=0.941, Precision=0.932, F1=0.937
+
+Confidence intervals:
+	Accuracy 95.0% confidence interval: (0.950122581406233, 0.9848774185937671)
+	Recall 95.0% confidence interval: (0.9237990519944682, 0.9585538891820023)
+	Precision 95.0% confidence interval: (0.9146614163576893, 0.9494162535452234)
+	F1 95.0% confidence interval: (0.9192079472598915, 0.9539627844474257)
+
+Critical thresholds:
+
+	Index	Threshold	Precision	Recall
+	------------------------------------------------
+	0	0.042284	0.800		0.970588
+	1	0.055943	0.825		0.960784
+	2	0.104055	0.850		0.960784
+	3	0.168707	0.875		0.960784
+	4	0.332760	0.900		0.941176
+	5	0.529432	0.925		0.941176
+	6	0.994748	0.950		0.833333
+	7	0.999129	0.975		0.784314

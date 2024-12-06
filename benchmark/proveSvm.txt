@@ -1,0 +1,48 @@
+6 componenti mantenute dalla pca (tutte le istanze(3000 e 1000)):
+0.807 (+/-0.013) for {'C': 1, 'kernel': 'linear'}
+0.887 (+/-0.027) for {'C': 1, 'kernel': 'rbf'}
+0.807 (+/-0.013) for {'C': 3, 'kernel': 'linear'}
+0.904 (+/-0.015) for {'C': 3, 'kernel': 'rbf'}
+
+
+10: (5min)
+0.843 (+/-0.011) for {'C': 1, 'kernel': 'linear'}
+0.914 (+/-0.012) for {'C': 1, 'kernel': 'rbf'}
+0.843 (+/-0.012) for {'C': 3, 'kernel': 'linear'}
+0.934 (+/-0.013) for {'C': 3, 'kernel': 'rbf'}
+
+16: (7min)
+0.852 (+/-0.016) for {'C': 1, 'kernel': 'linear'}
+0.933 (+/-0.025) for {'C': 1, 'kernel': 'rbf'}
+0.852 (+/-0.016) for {'C': 3, 'kernel': 'linear'}
+0.948 (+/-0.021) for {'C': 3, 'kernel': 'rbf'}
+
+20: (7min)
+0.863 (+/-0.018) for {'C': 1, 'kernel': 'linear'}
+0.939 (+/-0.020) for {'C': 1, 'kernel': 'rbf'}
+0.863 (+/-0.020) for {'C': 3, 'kernel': 'linear'}
+0.950 (+/-0.025) for {'C': 3, 'kernel': 'rbf'}
+
+90: (15min)
+0.881 (+/-0.019) for {'C': 1, 'kernel': 'linear'}
+0.951 (+/-0.017) for {'C': 1, 'kernel': 'rbf'}
+0.881 (+/-0.019) for {'C': 3, 'kernel': 'linear'}
+0.958 (+/-0.013) for {'C': 3, 'kernel': 'rbf'}
+
+
+prove oversampling con dati a 20 features:
+
+SMOTETomek(sampling_strategy="all", random_state=42) 5min
+0.852 su test set (+/-0.015) for {'C': 1, 'kernel': 'linear'}
+0.947 su test set (+/-0.019) for {'C': 1, 'kernel': 'rbf'}
+0.852 su test set (+/-0.016) for {'C': 3, 'kernel': 'linear'}
+0.958 su test set (+/-0.019) for {'C': 3, 'kernel': 'rbf'}
+
+
+prove undersampling con dati a 20 features:
+NearMiss() 10sec
+0.900 su test set (+/-0.039) for {'C': 1, 'kernel': 'linear'}
+0.909 su test set (+/-0.027) for {'C': 1, 'kernel': 'rbf'}
+0.900 su test set (+/-0.039) for {'C': 3, 'kernel': 'linear'}
+0.921 su test set (+/-0.020) for {'C': 3, 'kernel': 'rbf'}
+
